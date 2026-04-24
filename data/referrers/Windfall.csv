@@ -15,3 +15,4 @@ date,ref_1,ref_1_count,ref_1_uniques,ref_2,ref_2_count,ref_2_uniques,ref_3,ref_3
 2026-04-21,t.co,142,102,github.com,130,50,Google,46,27,wid.cert-bund.de,41,27,jira.esafeline.com,27,2,chocapikk.com,17,4,DuckDuckGo,13,7,yandex.ru,10,1,nvd.nist.gov,8,8,statics.teams.cdn.office.net,7,4
 2026-04-22,github.com,91,41,t.co,82,66,Google,46,27,wid.cert-bund.de,33,19,jira.esafeline.com,28,3,DuckDuckGo,11,5,yandex.ru,10,1,nvd.nist.gov,9,9,chocapikk.com,8,3,tip.byd.com,7,1
 2026-04-23,github.com,40,27,Google,38,24,jira.esafeline.com,28,3,t.co,23,23,yandex.ru,10,1,wid.cert-bund.de,9,6,DuckDuckGo,7,1,tip.byd.com,7,1,jira.greenbone.net,6,2,nvd.nist.gov,5,5
+2026-04-24,Google,34,22,github.com,33,23,jira.esafeline.com,28,3,t.co,16,16,yandex.ru,10,1,tip.byd.com,7,1,jira.greenbone.net,6,2,nvd.nist.gov,5,5,search.brave.com,5,1,wid.cert-bund.de,4,3
