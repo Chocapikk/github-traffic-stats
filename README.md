@@ -47,8 +47,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 | 19 | [CVE-2024-8517](https://github.com/Chocapikk/CVE-2024-8517) | 223 | 103 | 2026-03-27 | 24 | 32 |
 | 20 | [CVE-2023-4966](https://github.com/Chocapikk/CVE-2023-4966) | 221 | 154 | 2026-04-20 | 23 | 37 |
 | 21 | [CVE-2025-34299](https://github.com/Chocapikk/CVE-2025-34299) | 215 | 72 | 2026-03-31 | 114 | 27 |
-| 22 | [CVE-2024-27198](https://github.com/Chocapikk/CVE-2024-27198) | 210 | 118 | 2026-03-25 | 14 | 35 |
-| 23 | [cewlai](https://github.com/Chocapikk/cewlai) | 210 | 59 | 2026-04-13 | 66 | 11 |
+| 22 | [cewlai](https://github.com/Chocapikk/cewlai) | 210 | 59 | 2026-04-13 | 66 | 11 |
+| 23 | [CVE-2024-27198](https://github.com/Chocapikk/CVE-2024-27198) | 210 | 118 | 2026-03-25 | 14 | 35 |
 | 24 | [CVE-2025-32432](https://github.com/Chocapikk/CVE-2025-32432) | 203 | 115 | 2026-03-27 | 35 | 32 |
 | 25 | [CVE-2026-39912](https://github.com/Chocapikk/CVE-2026-39912) | 203 | 131 | 2026-04-10 | 59 | 16 |
 
@@ -67,8 +67,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 | 7 | [CVE-2025-55182](https://github.com/Chocapikk/CVE-2025-55182) | 468 | 413 | 2026-04-08 | 27 | 38 |
 | 8 | [CVE-2024-21887](https://github.com/Chocapikk/CVE-2024-21887) | 407 | 276 | 2026-03-31 | 26 | 36 |
 | 9 | [Windfall](https://github.com/Chocapikk/Windfall) | 268 | 198 | 2026-04-07 | 99 | 17 |
-| 10 | [CVE-2023-6553](https://github.com/Chocapikk/CVE-2023-6553) | 217 | 201 | 2026-04-10 | 39 | 37 |
-| 11 | [CVE-2024-45519](https://github.com/Chocapikk/CVE-2024-45519) | 217 | 205 | 2026-03-18 | 13 | 38 |
+| 10 | [CVE-2024-45519](https://github.com/Chocapikk/CVE-2024-45519) | 217 | 205 | 2026-03-18 | 13 | 38 |
+| 11 | [CVE-2023-6553](https://github.com/Chocapikk/CVE-2023-6553) | 217 | 201 | 2026-04-10 | 39 | 37 |
 | 12 | [CVE-2024-25600](https://github.com/Chocapikk/CVE-2024-25600) | 211 | 184 | 2026-03-22 | 14 | 38 |
 | 13 | [CVE-2024-36401](https://github.com/Chocapikk/CVE-2024-36401) | 179 | 170 | 2026-03-25 | 9 | 38 |
 | 14 | [pik](https://github.com/Chocapikk/pik) | 172 | 81 | 2026-04-24 | 130 | 23 |
@@ -79,8 +79,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 | 19 | [CVE-2026-24061](https://github.com/Chocapikk/CVE-2026-24061) | 116 | 112 | 2026-03-20 | 6 | 38 |
 | 20 | [CVE-2023-29357](https://github.com/Chocapikk/CVE-2023-29357) | 115 | 102 | 2026-03-25 | 8 | 32 |
 | 21 | [CVE-2023-4966](https://github.com/Chocapikk/CVE-2023-4966) | 114 | 91 | 2026-03-20 | 17 | 35 |
-| 22 | [CVE-2024-8517](https://github.com/Chocapikk/CVE-2024-8517) | 111 | 104 | 2026-04-14 | 10 | 34 |
-| 23 | [Chocapikk](https://github.com/Chocapikk/Chocapikk) | 111 | 80 | 2026-04-22 | 32 | 28 |
+| 22 | [Chocapikk](https://github.com/Chocapikk/Chocapikk) | 111 | 80 | 2026-04-22 | 32 | 28 |
+| 23 | [CVE-2024-8517](https://github.com/Chocapikk/CVE-2024-8517) | 111 | 104 | 2026-04-14 | 10 | 34 |
 | 24 | [CVE-2026-39912](https://github.com/Chocapikk/CVE-2026-39912) | 110 | 93 | 2026-04-10 | 32 | 16 |
 | 25 | [CVE-2024-56145](https://github.com/Chocapikk/CVE-2024-56145) | 107 | 99 | 2026-03-30 | 12 | 36 |
 
@@ -119,10 +119,10 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 | 9 | jira.esafeline.com | 28 | 3 |
 | 10 | chatgpt.com | 20 | 4 |
 | 11 | cve.codepwn.win | 18 | 8 |
-| 12 | packetstorm.news | 16 | 9 |
-| 13 | nvd.nist.gov | 16 | 10 |
-| 14 | x7331.gitbook.io | 14 | 4 |
-| 15 | statics.teams.cdn.office.net | 14 | 9 |
+| 12 | nvd.nist.gov | 16 | 10 |
+| 13 | packetstorm.news | 16 | 9 |
+| 14 | statics.teams.cdn.office.net | 14 | 9 |
+| 15 | x7331.gitbook.io | 14 | 4 |
 
 ---
 
