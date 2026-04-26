@@ -26,10 +26,13 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: python query_github_traffic_data.py
 
+      - name: Generate README
+        run: python generate_readme.py
+
       - name: Commit and push
         run: |
           git config user.email "noreply@github.com"
           git config user.name "Traffic Bot"
-          git add data/
+          git add data/ README.md
           git diff --cached --quiet || git commit -m "data: $(date -u +%Y-%m-%d)"
           git push

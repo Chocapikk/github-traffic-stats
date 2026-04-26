@@ -79,7 +79,9 @@ def get_user_public_repos(username):
         if not response:
             break
         repos.extend(
-            repo["name"] for repo in response if not repo["fork"] and not repo["private"]
+            repo["name"]
+            for repo in response
+            if not repo["fork"] and not repo["private"]
         )
         page += 1
     return repos
@@ -93,18 +95,12 @@ def main():
     for repo in repos:
         try:
             views_data = get_github_data(f"/repos/{owner}/{repo}/traffic/views")
-            save_views_clones_data(
-                views_data["views"], f"data/views/{repo}.csv"
-            )
+            save_views_clones_data(views_data["views"], f"data/views/{repo}.csv")
 
             clones_data = get_github_data(f"/repos/{owner}/{repo}/traffic/clones")
-            save_views_clones_data(
-                clones_data["clones"], f"data/clones/{repo}.csv"
-            )
+            save_views_clones_data(clones_data["clones"], f"data/clones/{repo}.csv")
 
-            paths_data = get_github_data(
-                f"/repos/{owner}/{repo}/traffic/popular/paths"
-            )
+            paths_data = get_github_data(f"/repos/{owner}/{repo}/traffic/popular/paths")
             save_referrers_paths_data(paths_data, f"data/paths/{repo}.csv", "path")
 
             referrers_data = get_github_data(
