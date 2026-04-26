@@ -78,6 +78,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 ## Global Referrers (All Repos Combined)
 
+> **Note:** Referrer data uses GitHub's 14-day rolling window, so totals reflect cumulative snapshots and may exceed actual view counts.
+
 | # | Referrer | Total Views | Total Uniques |
 |---|----------|-------------|---------------|
 | 1 | Google | 143,591 | 72,084 |
@@ -223,6 +225,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 ---
 
 ## Top Paths by Repository
+
+> **Note:** Path data uses GitHub's 14-day rolling window, same caveat as referrers.
 
 <details><summary><b>CVE-2026-21858</b></summary>
 

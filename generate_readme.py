@@ -195,6 +195,8 @@ def generate_readme(data_dir="data"):
             "",
             "## Global Referrers (All Repos Combined)",
             "",
+            "> **Note:** Referrer data uses GitHub's 14-day rolling window, so totals reflect cumulative snapshots and may exceed actual view counts.",
+            "",
             "| # | Referrer | Total Views | Total Uniques |",
             "|---|----------|-------------|---------------|",
         ]
@@ -241,6 +243,8 @@ def generate_readme(data_dir="data"):
             "---",
             "",
             "## Top Paths by Repository",
+            "",
+            "> **Note:** Path data uses GitHub's 14-day rolling window, same caveat as referrers.",
             "",
         ]
     )
