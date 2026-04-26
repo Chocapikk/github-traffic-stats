@@ -3,6 +3,7 @@
 
 import csv
 from collections import defaultdict
+from datetime import datetime
 from pathlib import Path
 
 
@@ -26,20 +27,46 @@ def get_date_range(data_dir):
     return min(all_dates), max(all_dates)
 
 
+def compute_days(start_date, end_date):
+    try:
+        d1 = datetime.strptime(start_date, "%Y-%m-%d")
+        d2 = datetime.strptime(end_date, "%Y-%m-%d")
+        return (d2 - d1).days + 1
+    except (ValueError, TypeError):
+        return 0
+
+
 def aggregate_views_clones(data_dir, metric):
     results = {}
     for csv_file in Path(data_dir, metric).glob("*.csv"):
         repo = csv_file.stem
         total_count = 0
         total_uniques = 0
+        daily = []
         for row in read_csv(csv_file):
             try:
-                total_count += int(row.get("count", 0) or 0)
-                total_uniques += int(row.get("uniques", 0) or 0)
+                count = int(row.get("count", 0) or 0)
+                uniques = int(row.get("uniques", 0) or 0)
+                total_count += count
+                total_uniques += uniques
+                if count > 0:
+                    daily.append(
+                        {
+                            "date": row.get("date", ""),
+                            "count": count,
+                            "uniques": uniques,
+                        }
+                    )
             except ValueError:
                 continue
         if total_count > 0:
-            results[repo] = {"count": total_count, "uniques": total_uniques}
+            peak = max(daily, key=lambda x: x["count"]) if daily else None
+            results[repo] = {
+                "count": total_count,
+                "uniques": total_uniques,
+                "peak": peak,
+                "days_active": len(daily),
+            }
     return dict(sorted(results.items(), key=lambda x: x[1]["count"], reverse=True))
 
 
@@ -61,16 +88,63 @@ def aggregate_referrers(data_dir):
     return ref_totals
 
 
+def aggregate_all_referrers(referrers):
+    global_refs = defaultdict(lambda: {"count": 0, "uniques": 0})
+    for repo_refs in referrers.values():
+        for ref, stats in repo_refs.items():
+            global_refs[ref]["count"] += stats["count"]
+            global_refs[ref]["uniques"] += stats["uniques"]
+    return dict(sorted(global_refs.items(), key=lambda x: x[1]["count"], reverse=True))
+
+
+def aggregate_paths(data_dir):
+    path_totals = defaultdict(lambda: defaultdict(lambda: {"count": 0, "uniques": 0}))
+    for csv_file in Path(data_dir, "paths").glob("*.csv"):
+        repo = csv_file.stem
+        for row in read_csv(csv_file):
+            for i in range(1, 11):
+                path = row.get(f"path_{i}", "").strip()
+                count = row.get(f"path_{i}_count", "")
+                uniques = row.get(f"path_{i}_uniques", "")
+                if path and count:
+                    try:
+                        path_totals[repo][path]["count"] += int(count)
+                        path_totals[repo][path]["uniques"] += int(uniques or 0)
+                    except ValueError:
+                        continue
+    return path_totals
+
+
+def compute_totals(views, clones):
+    total_views = sum(s["count"] for s in views.values())
+    total_uniques = sum(s["uniques"] for s in views.values())
+    total_clones = sum(s["count"] for s in clones.values())
+    total_cloners = sum(s["uniques"] for s in clones.values())
+    return total_views, total_uniques, total_clones, total_cloners
+
+
 def generate_readme(data_dir="data"):
     start_date, end_date = get_date_range(data_dir)
+    days = compute_days(start_date, end_date)
     views = aggregate_views_clones(data_dir, "views")
     clones = aggregate_views_clones(data_dir, "clones")
     referrers = aggregate_referrers(data_dir)
+    global_refs = aggregate_all_referrers(referrers)
+    paths = aggregate_paths(data_dir)
+    total_views, total_uniques, total_clones, total_cloners = compute_totals(
+        views, clones
+    )
 
     lines = [
         "# GitHub Traffic Stats",
         "",
-        f"**Data range:** `{start_date}` to `{end_date}`",
+        f"**Data range:** `{start_date}` to `{end_date}` ({days} days)",
+        "",
+        "| Metric | Total | Unique |",
+        "|--------|-------|--------|",
+        f"| Views | {total_views:,} | {total_uniques:,} |",
+        f"| Clones | {total_clones:,} | {total_cloners:,} |",
+        f"| Repos tracked | {len(views)} | - |",
         "",
         "Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics/traffic) data collected daily via GitHub Actions.",
         "",
@@ -78,14 +152,18 @@ def generate_readme(data_dir="data"):
         "",
         "## Top Repositories by Views",
         "",
-        "| # | Repository | Views | Unique Visitors |",
-        "|---|-----------|-------|-----------------|",
+        "| # | Repository | Views | Uniques | Peak Day | Peak Views | Active Days |",
+        "|---|-----------|-------|---------|----------|------------|-------------|",
     ]
 
-    for i, (repo, stats) in enumerate(list(views.items())[:20], 1):
+    for i, (repo, stats) in enumerate(list(views.items())[:25], 1):
+        peak = stats.get("peak")
+        peak_date = peak["date"] if peak else "-"
+        peak_count = f"{peak['count']:,}" if peak else "-"
         lines.append(
             f"| {i} | [{repo}](https://github.com/Chocapikk/{repo}) "
-            f"| {stats['count']:,} | {stats['uniques']:,} |"
+            f"| {stats['count']:,} | {stats['uniques']:,} "
+            f"| {peak_date} | {peak_count} | {stats['days_active']} |"
         )
 
     lines.extend(
@@ -95,16 +173,35 @@ def generate_readme(data_dir="data"):
             "",
             "## Top Repositories by Clones",
             "",
-            "| # | Repository | Clones | Unique Cloners |",
-            "|---|-----------|--------|----------------|",
+            "| # | Repository | Clones | Uniques | Peak Day | Peak Clones | Active Days |",
+            "|---|-----------|--------|---------|----------|-------------|-------------|",
         ]
     )
 
-    for i, (repo, stats) in enumerate(list(clones.items())[:20], 1):
+    for i, (repo, stats) in enumerate(list(clones.items())[:25], 1):
+        peak = stats.get("peak")
+        peak_date = peak["date"] if peak else "-"
+        peak_count = f"{peak['count']:,}" if peak else "-"
         lines.append(
             f"| {i} | [{repo}](https://github.com/Chocapikk/{repo}) "
-            f"| {stats['count']:,} | {stats['uniques']:,} |"
+            f"| {stats['count']:,} | {stats['uniques']:,} "
+            f"| {peak_date} | {peak_count} | {stats['days_active']} |"
         )
+
+    lines.extend(
+        [
+            "",
+            "---",
+            "",
+            "## Global Referrers (All Repos Combined)",
+            "",
+            "| # | Referrer | Total Views | Total Uniques |",
+            "|---|----------|-------------|---------------|",
+        ]
+    )
+
+    for i, (ref, stats) in enumerate(list(global_refs.items())[:15], 1):
+        lines.append(f"| {i} | {ref} | {stats['count']:,} | {stats['uniques']:,} |")
 
     lines.extend(
         [
@@ -125,19 +222,57 @@ def generate_readme(data_dir="data"):
         )[:5]
         if not sorted_refs:
             continue
-        lines.append(f"### [{repo}](https://github.com/Chocapikk/{repo})")
+
+        lines.append(
+            f"<details><summary><b>{repo}</b> "
+            f"({views[repo]['count']:,} views)</summary>"
+        )
         lines.append("")
-        lines.append("| Referrer | Views | Unique Visitors |")
-        lines.append("|----------|-------|-----------------|")
+        lines.append("| Referrer | Views | Uniques |")
+        lines.append("|----------|-------|---------|")
         for ref, stats in sorted_refs:
             lines.append(f"| {ref} | {stats['count']:,} | {stats['uniques']:,} |")
+        lines.append("")
+        lines.append("</details>")
         lines.append("")
 
     lines.extend(
         [
             "---",
             "",
-            "*Last updated: auto-generated by `generate_readme.py`*",
+            "## Top Paths by Repository",
+            "",
+        ]
+    )
+
+    for repo in top_repos_by_views[:5]:
+        if repo not in paths or not paths[repo]:
+            continue
+        sorted_paths = sorted(
+            paths[repo].items(), key=lambda x: x[1]["count"], reverse=True
+        )[:5]
+        if not sorted_paths:
+            continue
+
+        lines.append(f"<details><summary><b>{repo}</b></summary>")
+        lines.append("")
+        lines.append("| Path | Views | Uniques |")
+        lines.append("|------|-------|---------|")
+        for path, stats in sorted_paths:
+            short_path = path.replace(f"/Chocapikk/{repo}", "") or "/"
+            lines.append(
+                f"| `{short_path}` | {stats['count']:,} | {stats['uniques']:,} |"
+            )
+        lines.append("")
+        lines.append("</details>")
+        lines.append("")
+
+    lines.extend(
+        [
+            "---",
+            "",
+            f"*Last updated: auto-generated by `generate_readme.py` "
+            f"| {len(views)} repos | {days} days of data*",
             "",
         ]
     )
@@ -146,7 +281,8 @@ def generate_readme(data_dir="data"):
         f.write("\n".join(lines))
 
     print(
-        f"README.md generated ({len(views)} repos tracked, {start_date} to {end_date})"
+        f"README.md generated ({len(views)} repos tracked, "
+        f"{start_date} to {end_date}, {days} days)"
     )
 
 
