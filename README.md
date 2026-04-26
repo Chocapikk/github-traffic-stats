@@ -12,6 +12,16 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 ---
 
+## Monthly Breakdown
+
+| Month | Views | Unique Visitors | Clones | Unique Cloners |
+|-------|-------|-----------------|--------|----------------|
+| 2026-03 | 9,135 | 4,932 | 4,070 | 3,122 |
+| 2026-04 | 13,386 | 7,453 | 8,930 | 5,875 |
+| **Total** | **22,521** | **12,385** | **13,000** | **8,997** |
+
+---
+
 ## Top Repositories by Views
 
 | # | Repository | Views | Uniques | Peak Day | Peak Views | Active Days |
@@ -73,6 +83,23 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 | 23 | [Chocapikk](https://github.com/Chocapikk/Chocapikk) | 111 | 80 | 2026-04-22 | 32 | 28 |
 | 24 | [CVE-2026-39912](https://github.com/Chocapikk/CVE-2026-39912) | 110 | 93 | 2026-04-10 | 32 | 16 |
 | 25 | [CVE-2024-56145](https://github.com/Chocapikk/CVE-2024-56145) | 107 | 99 | 2026-03-30 | 12 | 36 |
+
+---
+
+## Monthly Views per Repository (Top 10)
+
+| Repository | 2026-03 | 2026-04 | Total |
+|-----------|-------|-------|-------|
+| [CVE-2026-21858](https://github.com/Chocapikk/CVE-2026-21858) | 1,629 | 1,870 | **3,499** |
+| [wpprobe](https://github.com/Chocapikk/wpprobe) | 1,137 | 1,388 | **2,525** |
+| [CVE-2025-55182](https://github.com/Chocapikk/CVE-2025-55182) | 749 | 716 | **1,465** |
+| [Windfall](https://github.com/Chocapikk/Windfall) | 0 | 1,226 | **1,226** |
+| [CVE-2024-45519](https://github.com/Chocapikk/CVE-2024-45519) | 452 | 746 | **1,198** |
+| [PersonalRobloxScripts](https://github.com/Chocapikk/PersonalRobloxScripts) | 341 | 540 | **881** |
+| [CVE-2023-28432](https://github.com/Chocapikk/CVE-2023-28432) | 328 | 415 | **743** |
+| [CVE-2023-6553](https://github.com/Chocapikk/CVE-2023-6553) | 347 | 314 | **661** |
+| [CVE-2024-36401](https://github.com/Chocapikk/CVE-2024-36401) | 245 | 413 | **658** |
+| [msf-exploit-collection](https://github.com/Chocapikk/msf-exploit-collection) | 250 | 403 | **653** |
 
 ---
 

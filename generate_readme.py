@@ -43,20 +43,20 @@ def aggregate_views_clones(data_dir, metric):
         total_count = 0
         total_uniques = 0
         daily = []
+        monthly = defaultdict(lambda: {"count": 0, "uniques": 0})
         for row in read_csv(csv_file):
             try:
                 count = int(row.get("count", 0) or 0)
                 uniques = int(row.get("uniques", 0) or 0)
+                date = row.get("date", "")
                 total_count += count
                 total_uniques += uniques
+                if date and len(date) >= 7:
+                    month_key = date[:7]
+                    monthly[month_key]["count"] += count
+                    monthly[month_key]["uniques"] += uniques
                 if count > 0:
-                    daily.append(
-                        {
-                            "date": row.get("date", ""),
-                            "count": count,
-                            "uniques": uniques,
-                        }
-                    )
+                    daily.append({"date": date, "count": count, "uniques": uniques})
             except ValueError:
                 continue
         if total_count > 0:
@@ -66,8 +66,25 @@ def aggregate_views_clones(data_dir, metric):
                 "uniques": total_uniques,
                 "peak": peak,
                 "days_active": len(daily),
+                "monthly": dict(sorted(monthly.items())),
             }
     return dict(sorted(results.items(), key=lambda x: x[1]["count"], reverse=True))
+
+
+def aggregate_monthly_totals(data_dir, metric):
+    monthly = defaultdict(lambda: {"count": 0, "uniques": 0})
+    for csv_file in Path(data_dir, metric).glob("*.csv"):
+        for row in read_csv(csv_file):
+            try:
+                count = int(row.get("count", 0) or 0)
+                uniques = int(row.get("uniques", 0) or 0)
+                date = row.get("date", "")
+                if date and len(date) >= 7:
+                    monthly[date[:7]]["count"] += count
+                    monthly[date[:7]]["uniques"] += uniques
+            except ValueError:
+                continue
+    return dict(sorted(monthly.items()))
 
 
 def aggregate_referrers(data_dir):
@@ -128,6 +145,8 @@ def generate_readme(data_dir="data"):
     days = compute_days(start_date, end_date)
     views = aggregate_views_clones(data_dir, "views")
     clones = aggregate_views_clones(data_dir, "clones")
+    monthly_views = aggregate_monthly_totals(data_dir, "views")
+    monthly_clones = aggregate_monthly_totals(data_dir, "clones")
     referrers = aggregate_referrers(data_dir)
     global_refs = aggregate_all_referrers(referrers)
     paths = aggregate_paths(data_dir)
@@ -150,11 +169,41 @@ def generate_readme(data_dir="data"):
         "",
         "---",
         "",
-        "## Top Repositories by Views",
+        "## Monthly Breakdown",
         "",
-        "| # | Repository | Views | Uniques | Peak Day | Peak Views | Active Days |",
-        "|---|-----------|-------|---------|----------|------------|-------------|",
     ]
+
+    all_months = sorted(set(list(monthly_views.keys()) + list(monthly_clones.keys())))
+    if all_months:
+        lines.append("| Month | Views | Unique Visitors | Clones | Unique Cloners |")
+        lines.append("|-------|-------|-----------------|--------|----------------|")
+        cumulative_views = 0
+        cumulative_clones = 0
+        for month in all_months:
+            mv = monthly_views.get(month, {"count": 0, "uniques": 0})
+            mc = monthly_clones.get(month, {"count": 0, "uniques": 0})
+            cumulative_views += mv["count"]
+            cumulative_clones += mc["count"]
+            lines.append(
+                f"| {month} | {mv['count']:,} | {mv['uniques']:,} "
+                f"| {mc['count']:,} | {mc['uniques']:,} |"
+            )
+        lines.append(
+            f"| **Total** | **{total_views:,}** | **{total_uniques:,}** "
+            f"| **{total_clones:,}** | **{total_cloners:,}** |"
+        )
+
+    lines.extend(
+        [
+            "",
+            "---",
+            "",
+            "## Top Repositories by Views",
+            "",
+            "| # | Repository | Views | Uniques | Peak Day | Peak Views | Active Days |",
+            "|---|-----------|-------|---------|----------|------------|-------------|",
+        ]
+    )
 
     for i, (repo, stats) in enumerate(list(views.items())[:25], 1):
         peak = stats.get("peak")
@@ -188,6 +237,32 @@ def generate_readme(data_dir="data"):
             f"| {peak_date} | {peak_count} | {stats['days_active']} |"
         )
 
+    # Monthly breakdown per top repo
+    lines.extend(
+        [
+            "",
+            "---",
+            "",
+            "## Monthly Views per Repository (Top 10)",
+            "",
+        ]
+    )
+
+    top_repos = list(views.keys())[:10]
+    if all_months and top_repos:
+        header = "| Repository | " + " | ".join(all_months) + " | Total |"
+        sep = "|-----------|" + "|".join(["-------"] * len(all_months)) + "|-------|"
+        lines.append(header)
+        lines.append(sep)
+        for repo in top_repos:
+            monthly = views[repo].get("monthly", {})
+            cols = [f"{monthly.get(m, {}).get('count', 0):,}" for m in all_months]
+            lines.append(
+                f"| [{repo}](https://github.com/Chocapikk/{repo}) | "
+                + " | ".join(cols)
+                + f" | **{views[repo]['count']:,}** |"
+            )
+
     lines.extend(
         [
             "",
@@ -195,7 +270,8 @@ def generate_readme(data_dir="data"):
             "",
             "## Global Referrers (All Repos Combined)",
             "",
-            "> **Note:** Referrer data uses GitHub's 14-day rolling window, so totals reflect cumulative snapshots and may exceed actual view counts.",
+            "> **Note:** Referrer data uses GitHub's 14-day rolling window, "
+            "so totals reflect cumulative snapshots and may exceed actual view counts.",
             "",
             "| # | Referrer | Total Views | Total Uniques |",
             "|---|----------|-------------|---------------|",
@@ -244,7 +320,8 @@ def generate_readme(data_dir="data"):
             "",
             "## Top Paths by Repository",
             "",
-            "> **Note:** Path data uses GitHub's 14-day rolling window, same caveat as referrers.",
+            "> **Note:** Path data uses GitHub's 14-day rolling window, "
+            "same caveat as referrers.",
             "",
         ]
     )
