@@ -91,17 +91,20 @@ def aggregate_referrers(data_dir):
     ref_totals = defaultdict(lambda: defaultdict(lambda: {"count": 0, "uniques": 0}))
     for csv_file in Path(data_dir, "referrers").glob("*.csv"):
         repo = csv_file.stem
-        for row in read_csv(csv_file):
-            for i in range(1, 11):
-                ref = row.get(f"ref_{i}", "").strip()
-                count = row.get(f"ref_{i}_count", "")
-                uniques = row.get(f"ref_{i}_uniques", "")
-                if ref and count:
-                    try:
-                        ref_totals[repo][ref]["count"] += int(count)
-                        ref_totals[repo][ref]["uniques"] += int(uniques or 0)
-                    except ValueError:
-                        continue
+        rows = read_csv(csv_file)
+        if not rows:
+            continue
+        row = rows[-1]
+        for i in range(1, 11):
+            ref = row.get(f"ref_{i}", "").strip()
+            count = row.get(f"ref_{i}_count", "")
+            uniques = row.get(f"ref_{i}_uniques", "")
+            if ref and count:
+                try:
+                    ref_totals[repo][ref]["count"] += int(count)
+                    ref_totals[repo][ref]["uniques"] += int(uniques or 0)
+                except ValueError:
+                    continue
     return ref_totals
 
 
@@ -118,17 +121,20 @@ def aggregate_paths(data_dir):
     path_totals = defaultdict(lambda: defaultdict(lambda: {"count": 0, "uniques": 0}))
     for csv_file in Path(data_dir, "paths").glob("*.csv"):
         repo = csv_file.stem
-        for row in read_csv(csv_file):
-            for i in range(1, 11):
-                path = row.get(f"path_{i}", "").strip()
-                count = row.get(f"path_{i}_count", "")
-                uniques = row.get(f"path_{i}_uniques", "")
-                if path and count:
-                    try:
-                        path_totals[repo][path]["count"] += int(count)
-                        path_totals[repo][path]["uniques"] += int(uniques or 0)
-                    except ValueError:
-                        continue
+        rows = read_csv(csv_file)
+        if not rows:
+            continue
+        row = rows[-1]
+        for i in range(1, 11):
+            path = row.get(f"path_{i}", "").strip()
+            count = row.get(f"path_{i}_count", "")
+            uniques = row.get(f"path_{i}_uniques", "")
+            if path and count:
+                try:
+                    path_totals[repo][path]["count"] += int(count)
+                    path_totals[repo][path]["uniques"] += int(uniques or 0)
+                except ValueError:
+                    continue
     return path_totals
 
 
@@ -270,8 +276,6 @@ def generate_readme(data_dir="data"):
             "",
             "## Global Referrers (All Repos Combined)",
             "",
-            "> **Note:** Referrer data uses GitHub's 14-day rolling window, "
-            "so totals reflect cumulative snapshots and may exceed actual view counts.",
             "",
             "| # | Referrer | Total Views | Total Uniques |",
             "|---|----------|-------------|---------------|",
@@ -320,8 +324,6 @@ def generate_readme(data_dir="data"):
             "",
             "## Top Paths by Repository",
             "",
-            "> **Note:** Path data uses GitHub's 14-day rolling window, "
-            "same caveat as referrers.",
             "",
         ]
     )
