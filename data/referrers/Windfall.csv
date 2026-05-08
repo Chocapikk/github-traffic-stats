@@ -29,3 +29,4 @@ date,ref_1,ref_1_count,ref_1_uniques,ref_2,ref_2_count,ref_2_uniques,ref_3,ref_3
 2026-05-05,Google,43,21,github.com,38,20,t.co,6,5,x.threatbook.com,4,1,wid.cert-bund.de,3,2,nvd.nist.gov,2,2,DuckDuckGo,1,1,claude.ai,1,1,jira.esafeline.com,1,1,jvndb.jvn.jp,1,1
 2026-05-06,Google,43,21,github.com,37,19,t.co,5,4,x.threatbook.com,4,1,DuckDuckGo,1,1,jvndb.jvn.jp,1,1,nvd-admin.nist.gov,1,1,nvd.nist.gov,1,1,wid.cert-bund.de,1,1,ya.ru,1,1
 2026-05-07,Google,41,19,github.com,40,20,t.co,4,3,x.threatbook.com,4,1,DuckDuckGo,1,1,jvndb.jvn.jp,1,1,nvd-admin.nist.gov,1,1,nvd.nist.gov,1,1,wid.cert-bund.de,1,1,ya.ru,1,1
+2026-05-08,Google,42,19,github.com,36,19,x.threatbook.com,4,1,t.co,3,3,nvd.nist.gov,2,2,DuckDuckGo,1,1,jvndb.jvn.jp,1,1,nvd-admin.nist.gov,1,1,wid.cert-bund.de,1,1,ya.ru,1,1
