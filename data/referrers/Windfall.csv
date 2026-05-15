@@ -36,3 +36,4 @@ date,ref_1,ref_1_count,ref_1_uniques,ref_2,ref_2_count,ref_2_uniques,ref_3,ref_3
 2026-05-12,github.com,37,19,Google,22,13,x.threatbook.com,4,1,jvndb.jvn.jp,2,2,nvd.nist.gov,2,2,cve.threatint.eu,1,1,t.co,1,1,wid.cert-bund.de,1,1,,,,,,
 2026-05-13,github.com,37,19,Google,22,13,x.threatbook.com,4,1,jvndb.jvn.jp,2,2,nvd.nist.gov,2,2,cve.threatint.eu,1,1,wid.cert-bund.de,1,1,,,,,,,,,
 2026-05-14,github.com,27,17,Google,23,13,jvndb.jvn.jp,2,2,nvd.nist.gov,2,2,cve.threatint.eu,1,1,wid.cert-bund.de,1,1,,,,,,,,,,,,
+2026-05-15,github.com,26,17,Google,22,13,jvndb.jvn.jp,2,2,nvd.nist.gov,2,2,cve.threatint.eu,1,1,wid.cert-bund.de,1,1,,,,,,,,,,,,
