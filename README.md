@@ -1,6 +1,6 @@
 # GitHub Traffic Stats
 
-**Data range:** `2026-03-18` to `2026-06-02` (77 days)
+**Data range:** `2026-03-18` to `2026-06-03` (78 days)
 
 | Metric | Total | Unique |
 |--------|-------|--------|
@@ -110,21 +110,21 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | # | Referrer | Total Views | Total Uniques |
 |---|----------|-------------|---------------|
-| 1 | Google | 2,542 | 1,446 |
-| 2 | github.com | 657 | 386 |
-| 3 | Bing | 86 | 44 |
-| 4 | search.brave.com | 85 | 50 |
+| 1 | Google | 2,566 | 1,459 |
+| 2 | github.com | 623 | 373 |
+| 3 | Bing | 87 | 44 |
+| 4 | search.brave.com | 80 | 46 |
 | 5 | DuckDuckGo | 67 | 41 |
-| 6 | nvd.nist.gov | 33 | 10 |
-| 7 | t.co | 32 | 14 |
-| 8 | away.vk.com | 21 | 2 |
-| 9 | chocapikk.com | 18 | 6 |
-| 10 | doubao.com | 13 | 2 |
-| 11 | chatgpt.com | 11 | 9 |
-| 12 | youtube.com | 10 | 6 |
-| 13 | medium.com | 10 | 4 |
-| 14 | linkedin.com | 9 | 3 |
-| 15 | yandex.ru | 8 | 6 |
+| 6 | t.co | 29 | 12 |
+| 7 | nvd.nist.gov | 21 | 7 |
+| 8 | away.vk.com | 17 | 2 |
+| 9 | doubao.com | 13 | 2 |
+| 10 | youtube.com | 10 | 6 |
+| 11 | medium.com | 10 | 4 |
+| 12 | x7331.gitbook.io | 9 | 5 |
+| 13 | chatgpt.com | 8 | 7 |
+| 14 | yandex.ru | 8 | 6 |
+| 15 | musyokaian.medium.com | 8 | 1 |
 
 ---
 
@@ -134,11 +134,11 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 200 | 91 |
-| github.com | 173 | 110 |
+| Google | 203 | 92 |
+| github.com | 163 | 109 |
 | doubao.com | 9 | 1 |
-| DuckDuckGo | 8 | 6 |
-| youtube.com | 7 | 3 |
+| youtube.com | 8 | 4 |
+| DuckDuckGo | 7 | 5 |
 
 </details>
 
@@ -147,8 +147,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 | Referrer | Views | Uniques |
 |----------|-------|---------|
 | Google | 221 | 143 |
-| github.com | 74 | 26 |
-| away.vk.com | 21 | 2 |
+| github.com | 73 | 27 |
+| away.vk.com | 17 | 2 |
 | t.co | 16 | 3 |
 | DuckDuckGo | 12 | 8 |
 
@@ -158,9 +158,9 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 789 | 406 |
-| search.brave.com | 44 | 22 |
-| github.com | 36 | 26 |
+| Google | 799 | 414 |
+| search.brave.com | 41 | 20 |
+| github.com | 37 | 27 |
 | medium.com | 10 | 4 |
 | DuckDuckGo | 5 | 3 |
 
@@ -170,10 +170,10 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 133 | 85 |
-| github.com | 37 | 21 |
+| Google | 133 | 84 |
+| github.com | 35 | 19 |
+| Bing | 7 | 4 |
 | DuckDuckGo | 6 | 4 |
-| Bing | 6 | 3 |
 | Baidu | 1 | 1 |
 
 </details>
@@ -182,8 +182,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 12 | 8 |
-| github.com | 11 | 8 |
+| Google | 14 | 9 |
+| github.com | 10 | 7 |
 | enterprisetools.atlassian.net | 2 | 1 |
 | yandex.ru | 2 | 1 |
 | chocapikk.com | 1 | 1 |
@@ -194,8 +194,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 89 | 64 |
-| github.com | 4 | 3 |
+| Google | 90 | 65 |
+| github.com | 3 | 2 |
 | search.brave.com | 1 | 1 |
 
 </details>
@@ -204,8 +204,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 99 | 48 |
-| github.com | 33 | 19 |
+| Google | 100 | 48 |
+| github.com | 30 | 18 |
 | Bing | 5 | 3 |
 | blog.certcube.com | 3 | 1 |
 | search.brave.com | 2 | 2 |
@@ -216,7 +216,7 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 83 | 44 |
+| Google | 86 | 46 |
 | Bing | 8 | 5 |
 | search.brave.com | 6 | 2 |
 | DuckDuckGo | 4 | 1 |
@@ -227,9 +227,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 102 | 81 |
+| Google | 97 | 79 |
 | DuckDuckGo | 1 | 1 |
-| github.com | 1 | 1 |
 
 </details>
 
@@ -237,10 +236,10 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 67 | 44 |
-| github.com | 12 | 6 |
+| Google | 65 | 44 |
+| github.com | 10 | 5 |
 | search.brave.com | 2 | 2 |
-| youtube.com | 2 | 2 |
+| youtube.com | 1 | 1 |
 
 </details>
 
@@ -253,11 +252,11 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Path | Views | Uniques |
 |------|-------|---------|
-| `/` | 413 | 303 |
+| `/` | 406 | 301 |
 | `/blob/master/exploit.py` | 106 | 68 |
-| `/tree/master` | 23 | 14 |
-| `/blob/master/docker-compose.yml` | 16 | 12 |
+| `/tree/master` | 20 | 11 |
 | `/blob/master/README.md` | 14 | 14 |
+| `/blob/master/docker-compose.yml` | 14 | 10 |
 
 </details>
 
@@ -265,11 +264,11 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Path | Views | Uniques |
 |------|-------|---------|
-| `/` | 415 | 255 |
+| `/` | 405 | 252 |
 | `/issues/27` | 20 | 15 |
 | `/issues` | 14 | 8 |
-| `/stargazers` | 10 | 2 |
-| `/tree/main` | 9 | 5 |
+| `/tree/main` | 8 | 5 |
+| `/stargazers` | 8 | 2 |
 
 </details>
 
@@ -277,10 +276,10 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Path | Views | Uniques |
 |------|-------|---------|
-| `/` | 721 | 563 |
-| `/blob/main/exploit.py` | 246 | 185 |
-| `/blob/main/requirements.txt` | 68 | 57 |
-| `/tree/main` | 48 | 31 |
+| `/` | 726 | 571 |
+| `/blob/main/exploit.py` | 249 | 189 |
+| `/blob/main/requirements.txt` | 69 | 58 |
+| `/tree/main` | 47 | 30 |
 | `/blob/main/README.md` | 32 | 23 |
 
 </details>
@@ -289,11 +288,11 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Path | Views | Uniques |
 |------|-------|---------|
-| `/` | 189 | 126 |
+| `/` | 177 | 117 |
 | `/blob/main/exploit.py` | 43 | 33 |
-| `/tree/main` | 10 | 8 |
-| `/blob/main/README.md` | 9 | 7 |
-| `/blob/main/requirements.txt` | 9 | 7 |
+| `/tree/main` | 13 | 10 |
+| `/blob/main/img/zimbra_rce.png` | 10 | 9 |
+| `/blob/main/README.md` | 10 | 8 |
 
 </details>
 
@@ -301,7 +300,7 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Path | Views | Uniques |
 |------|-------|---------|
-| `/` | 41 | 31 |
+| `/` | 41 | 29 |
 | `/tree/main/metasploit` | 2 | 2 |
 | `/blob/main/windfall_sqli.py` | 1 | 1 |
 | `/issues` | 1 | 1 |
@@ -311,4 +310,4 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 ---
 
-*Last updated: auto-generated by `generate_readme.py` | 110 repos | 77 days of data*
+*Last updated: auto-generated by `generate_readme.py` | 110 repos | 78 days of data*
