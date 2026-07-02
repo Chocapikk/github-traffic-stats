@@ -84,3 +84,4 @@ date,ref_1,ref_1_count,ref_1_uniques,ref_2,ref_2_count,ref_2_uniques,ref_3,ref_3
 2026-06-29,github.com,30,11,Google,18,15,x.threatbook.com,7,1,t.co,5,4,DuckDuckGo,2,2,,,,,,,,,,,,,,,
 2026-06-30,github.com,30,11,Google,19,16,x.threatbook.com,7,1,t.co,4,3,DuckDuckGo,2,2,,,,,,,,,,,,,,,
 2026-07-01,github.com,29,9,Google,20,17,x.threatbook.com,7,1,t.co,4,3,DuckDuckGo,2,2,,,,,,,,,,,,,,,
+2026-07-02,github.com,32,10,Google,20,17,t.co,5,4,DuckDuckGo,2,2,x.threatbook.com,2,1,,,,,,,,,,,,,,,
