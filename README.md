@@ -1,11 +1,11 @@
 # GitHub Traffic Stats
 
-**Data range:** `2026-03-18` to `2026-07-18` (123 days)
+**Data range:** `2026-03-18` to `2026-07-19` (124 days)
 
 | Metric | Total | Unique |
 |--------|-------|--------|
-| Views | 48,948 | 28,034 |
-| Clones | 31,595 | 23,422 |
+| Views | 49,196 | 28,190 |
+| Clones | 32,097 | 23,658 |
 | Repos tracked | 112 | - |
 
 Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics/traffic) data collected daily via GitHub Actions.
@@ -20,8 +20,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 | 2026-04 | 14,946 | 8,336 | 10,289 | 6,501 |
 | 2026-05 | 11,283 | 6,625 | 6,766 | 5,345 |
 | 2026-06 | 7,973 | 4,699 | 5,591 | 4,444 |
-| 2026-07 | 5,611 | 3,442 | 4,879 | 4,010 |
-| **Total** | **48,948** | **28,034** | **31,595** | **23,422** |
+| 2026-07 | 5,859 | 3,598 | 5,381 | 4,246 |
+| **Total** | **49,196** | **28,190** | **32,097** | **23,658** |
 
 ---
 
@@ -29,28 +29,28 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | # | Repository | Views | Uniques | Peak Day | Peak Views | Active Days |
 |---|-----------|-------|---------|----------|------------|-------------|
-| 1 | [CVE-2026-21858](https://github.com/Chocapikk/CVE-2026-21858) | 6,530 | 3,583 | 2026-03-27 | 243 | 113 |
-| 2 | [wpprobe](https://github.com/Chocapikk/wpprobe) | 6,013 | 3,714 | 2026-05-08 | 176 | 113 |
-| 3 | [CVE-2025-55182](https://github.com/Chocapikk/CVE-2025-55182) | 4,144 | 2,323 | 2026-05-24 | 212 | 113 |
-| 4 | [CVE-2024-45519](https://github.com/Chocapikk/CVE-2024-45519) | 2,813 | 1,557 | 2026-04-08 | 65 | 112 |
-| 5 | [CVE-2024-36401](https://github.com/Chocapikk/CVE-2024-36401) | 1,823 | 1,005 | 2026-05-12 | 42 | 113 |
-| 6 | [Windfall](https://github.com/Chocapikk/Windfall) | 1,708 | 987 | 2026-04-08 | 361 | 89 |
-| 7 | [msf-exploit-collection](https://github.com/Chocapikk/msf-exploit-collection) | 1,674 | 1,021 | 2026-06-30 | 83 | 113 |
-| 8 | [PersonalRobloxScripts](https://github.com/Chocapikk/PersonalRobloxScripts) | 1,670 | 955 | 2026-04-21 | 61 | 113 |
-| 9 | [CVE-2026-24061](https://github.com/Chocapikk/CVE-2026-24061) | 1,444 | 980 | 2026-06-24 | 32 | 112 |
-| 10 | [CVE-2023-28432](https://github.com/Chocapikk/CVE-2023-28432) | 1,430 | 731 | 2026-03-21 | 51 | 113 |
-| 11 | [CVE-2024-25600](https://github.com/Chocapikk/CVE-2024-25600) | 1,298 | 771 | 2026-03-23 | 46 | 113 |
-| 12 | [CVE-2019-19492](https://github.com/Chocapikk/CVE-2019-19492) | 1,275 | 565 | 2026-04-22 | 37 | 112 |
-| 13 | [CVE-2023-6553](https://github.com/Chocapikk/CVE-2023-6553) | 1,225 | 543 | 2026-06-28 | 89 | 107 |
-| 14 | [CVE-2023-22515](https://github.com/Chocapikk/CVE-2023-22515) | 1,046 | 556 | 2026-04-24 | 28 | 108 |
-| 15 | [CVE-2025-32432](https://github.com/Chocapikk/CVE-2025-32432) | 761 | 452 | 2026-06-24 | 56 | 90 |
-| 16 | [CVE-2023-29357](https://github.com/Chocapikk/CVE-2023-29357) | 579 | 359 | 2026-04-06 | 17 | 108 |
+| 1 | [CVE-2026-21858](https://github.com/Chocapikk/CVE-2026-21858) | 6,555 | 3,600 | 2026-03-27 | 243 | 114 |
+| 2 | [wpprobe](https://github.com/Chocapikk/wpprobe) | 6,040 | 3,736 | 2026-05-08 | 176 | 114 |
+| 3 | [CVE-2025-55182](https://github.com/Chocapikk/CVE-2025-55182) | 4,160 | 2,335 | 2026-05-24 | 212 | 114 |
+| 4 | [CVE-2024-45519](https://github.com/Chocapikk/CVE-2024-45519) | 2,821 | 1,561 | 2026-04-08 | 65 | 113 |
+| 5 | [CVE-2024-36401](https://github.com/Chocapikk/CVE-2024-36401) | 1,829 | 1,010 | 2026-05-12 | 42 | 114 |
+| 6 | [Windfall](https://github.com/Chocapikk/Windfall) | 1,711 | 990 | 2026-04-08 | 361 | 90 |
+| 7 | [msf-exploit-collection](https://github.com/Chocapikk/msf-exploit-collection) | 1,686 | 1,031 | 2026-06-30 | 83 | 114 |
+| 8 | [PersonalRobloxScripts](https://github.com/Chocapikk/PersonalRobloxScripts) | 1,683 | 966 | 2026-04-21 | 61 | 114 |
+| 9 | [CVE-2026-24061](https://github.com/Chocapikk/CVE-2026-24061) | 1,450 | 984 | 2026-06-24 | 32 | 113 |
+| 10 | [CVE-2023-28432](https://github.com/Chocapikk/CVE-2023-28432) | 1,434 | 732 | 2026-03-21 | 51 | 114 |
+| 11 | [CVE-2024-25600](https://github.com/Chocapikk/CVE-2024-25600) | 1,302 | 775 | 2026-03-23 | 46 | 114 |
+| 12 | [CVE-2019-19492](https://github.com/Chocapikk/CVE-2019-19492) | 1,286 | 571 | 2026-04-22 | 37 | 113 |
+| 13 | [CVE-2023-6553](https://github.com/Chocapikk/CVE-2023-6553) | 1,235 | 546 | 2026-06-28 | 89 | 108 |
+| 14 | [CVE-2023-22515](https://github.com/Chocapikk/CVE-2023-22515) | 1,053 | 559 | 2026-04-24 | 28 | 109 |
+| 15 | [CVE-2025-32432](https://github.com/Chocapikk/CVE-2025-32432) | 773 | 460 | 2026-06-24 | 56 | 91 |
+| 16 | [CVE-2023-29357](https://github.com/Chocapikk/CVE-2023-29357) | 584 | 363 | 2026-04-06 | 17 | 109 |
 | 17 | [CVE-2024-56145](https://github.com/Chocapikk/CVE-2024-56145) | 491 | 302 | 2026-05-29 | 21 | 97 |
-| 18 | [pgread](https://github.com/Chocapikk/pgread) | 480 | 214 | 2026-04-08 | 66 | 84 |
-| 19 | [CVE-2024-8517](https://github.com/Chocapikk/CVE-2024-8517) | 480 | 197 | 2026-06-23 | 26 | 81 |
-| 20 | [CVE-2023-4966](https://github.com/Chocapikk/CVE-2023-4966) | 479 | 349 | 2026-04-20 | 23 | 107 |
-| 21 | [CVE-2024-27198](https://github.com/Chocapikk/CVE-2024-27198) | 455 | 248 | 2026-06-27 | 15 | 97 |
-| 22 | [cewlai](https://github.com/Chocapikk/cewlai) | 436 | 214 | 2026-04-13 | 66 | 74 |
+| 18 | [CVE-2024-8517](https://github.com/Chocapikk/CVE-2024-8517) | 486 | 198 | 2026-06-23 | 26 | 82 |
+| 19 | [CVE-2023-4966](https://github.com/Chocapikk/CVE-2023-4966) | 483 | 353 | 2026-04-20 | 23 | 108 |
+| 20 | [pgread](https://github.com/Chocapikk/pgread) | 480 | 214 | 2026-04-08 | 66 | 84 |
+| 21 | [CVE-2024-27198](https://github.com/Chocapikk/CVE-2024-27198) | 464 | 252 | 2026-06-27 | 15 | 98 |
+| 22 | [cewlai](https://github.com/Chocapikk/cewlai) | 437 | 215 | 2026-04-13 | 66 | 75 |
 | 23 | [CVE-2026-39912](https://github.com/Chocapikk/CVE-2026-39912) | 423 | 288 | 2026-04-10 | 59 | 77 |
 | 24 | [CVE-2017-9841](https://github.com/Chocapikk/CVE-2017-9841) | 422 | 228 | 2026-03-25 | 28 | 82 |
 | 25 | [CVE-2024-21887](https://github.com/Chocapikk/CVE-2024-21887) | 402 | 270 | 2026-04-16 | 16 | 103 |
@@ -61,31 +61,31 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | # | Repository | Clones | Uniques | Peak Day | Peak Clones | Active Days |
 |---|-----------|--------|---------|----------|-------------|-------------|
-| 1 | [wpprobe](https://github.com/Chocapikk/wpprobe) | 3,737 | 1,600 | 2026-04-10 | 156 | 113 |
-| 2 | [CVE-2025-55182](https://github.com/Chocapikk/CVE-2025-55182) | 1,898 | 1,723 | 2026-05-24 | 137 | 113 |
+| 1 | [wpprobe](https://github.com/Chocapikk/wpprobe) | 3,756 | 1,606 | 2026-04-10 | 156 | 114 |
+| 2 | [CVE-2025-55182](https://github.com/Chocapikk/CVE-2025-55182) | 1,905 | 1,730 | 2026-05-24 | 137 | 114 |
 | 3 | [cewlai](https://github.com/Chocapikk/cewlai) | 1,807 | 706 | 2026-04-14 | 871 | 64 |
-| 4 | [CVE-2026-21858](https://github.com/Chocapikk/CVE-2026-21858) | 1,748 | 1,510 | 2026-05-14 | 62 | 113 |
-| 5 | [instagram-story-research](https://github.com/Chocapikk/instagram-story-research) | 1,186 | 542 | 2026-04-21 | 460 | 44 |
-| 6 | [github-traffic-stats](https://github.com/Chocapikk/github-traffic-stats) | 1,184 | 748 | 2026-04-26 | 76 | 75 |
+| 4 | [CVE-2026-21858](https://github.com/Chocapikk/CVE-2026-21858) | 1,760 | 1,521 | 2026-05-14 | 62 | 114 |
+| 5 | [github-traffic-stats](https://github.com/Chocapikk/github-traffic-stats) | 1,190 | 754 | 2026-04-26 | 76 | 76 |
+| 6 | [instagram-story-research](https://github.com/Chocapikk/instagram-story-research) | 1,186 | 542 | 2026-04-21 | 460 | 44 |
 | 7 | [pgread](https://github.com/Chocapikk/pgread) | 891 | 372 | 2026-04-11 | 245 | 84 |
 | 8 | [hidproto](https://github.com/Chocapikk/hidproto) | 836 | 316 | 2026-03-30 | 524 | 53 |
-| 9 | [CVE-2024-36401](https://github.com/Chocapikk/CVE-2024-36401) | 728 | 668 | 2026-06-03 | 20 | 113 |
-| 10 | [pik](https://github.com/Chocapikk/pik) | 632 | 103 | 2026-04-29 | 145 | 27 |
-| 11 | [CVE-2024-45519](https://github.com/Chocapikk/CVE-2024-45519) | 621 | 576 | 2026-05-07 | 17 | 110 |
-| 12 | [CVE-2024-25600](https://github.com/Chocapikk/CVE-2024-25600) | 574 | 518 | 2026-07-16 | 16 | 112 |
-| 13 | [CVE-2024-21887](https://github.com/Chocapikk/CVE-2024-21887) | 560 | 414 | 2026-03-31 | 26 | 96 |
-| 14 | [Windfall](https://github.com/Chocapikk/Windfall) | 557 | 432 | 2026-04-07 | 99 | 88 |
-| 15 | [CVE-2023-6553](https://github.com/Chocapikk/CVE-2023-6553) | 550 | 501 | 2026-04-10 | 39 | 111 |
-| 16 | [CVE-2023-29357](https://github.com/Chocapikk/CVE-2023-29357) | 363 | 316 | 2026-05-24 | 15 | 103 |
-| 17 | [CVE-2023-22515](https://github.com/Chocapikk/CVE-2023-22515) | 342 | 311 | 2026-03-30 | 10 | 101 |
-| 18 | [CVE-2025-34299](https://github.com/Chocapikk/CVE-2025-34299) | 330 | 164 | 2026-04-20 | 73 | 82 |
-| 19 | [CVE-2024-56145](https://github.com/Chocapikk/CVE-2024-56145) | 328 | 298 | 2026-03-30 | 12 | 104 |
-| 20 | [CVE-2024-27198](https://github.com/Chocapikk/CVE-2024-27198) | 318 | 302 | 2026-06-20 | 24 | 98 |
+| 9 | [Windfall](https://github.com/Chocapikk/Windfall) | 760 | 438 | 2026-07-19 | 203 | 89 |
+| 10 | [CVE-2024-36401](https://github.com/Chocapikk/CVE-2024-36401) | 741 | 675 | 2026-06-03 | 20 | 114 |
+| 11 | [pik](https://github.com/Chocapikk/pik) | 632 | 103 | 2026-04-29 | 145 | 27 |
+| 12 | [CVE-2024-45519](https://github.com/Chocapikk/CVE-2024-45519) | 627 | 582 | 2026-05-07 | 17 | 111 |
+| 13 | [CVE-2024-25600](https://github.com/Chocapikk/CVE-2024-25600) | 582 | 526 | 2026-07-16 | 16 | 113 |
+| 14 | [CVE-2024-21887](https://github.com/Chocapikk/CVE-2024-21887) | 563 | 417 | 2026-03-31 | 26 | 97 |
+| 15 | [CVE-2023-6553](https://github.com/Chocapikk/CVE-2023-6553) | 555 | 506 | 2026-04-10 | 39 | 112 |
+| 16 | [CVE-2023-29357](https://github.com/Chocapikk/CVE-2023-29357) | 368 | 321 | 2026-05-24 | 15 | 104 |
+| 17 | [CVE-2024-56145](https://github.com/Chocapikk/CVE-2024-56145) | 359 | 302 | 2026-07-19 | 31 | 105 |
+| 18 | [CVE-2023-22515](https://github.com/Chocapikk/CVE-2023-22515) | 347 | 316 | 2026-03-30 | 10 | 102 |
+| 19 | [CVE-2025-34299](https://github.com/Chocapikk/CVE-2025-34299) | 333 | 167 | 2026-04-20 | 73 | 83 |
+| 20 | [CVE-2024-27198](https://github.com/Chocapikk/CVE-2024-27198) | 323 | 307 | 2026-06-20 | 24 | 99 |
 | 21 | [Chocapikk](https://github.com/Chocapikk/Chocapikk) | 305 | 217 | 2026-07-04 | 47 | 70 |
-| 22 | [CVE-2025-32432](https://github.com/Chocapikk/CVE-2025-32432) | 299 | 283 | 2026-05-15 | 20 | 101 |
-| 23 | [CVE-2023-28432](https://github.com/Chocapikk/CVE-2023-28432) | 298 | 283 | 2026-04-03 | 9 | 103 |
-| 24 | [CVE-2023-4966](https://github.com/Chocapikk/CVE-2023-4966) | 292 | 255 | 2026-03-20 | 17 | 103 |
-| 25 | [CVE-2023-35885](https://github.com/Chocapikk/CVE-2023-35885) | 283 | 218 | 2026-05-09 | 33 | 94 |
+| 22 | [CVE-2025-32432](https://github.com/Chocapikk/CVE-2025-32432) | 305 | 285 | 2026-05-15 | 20 | 102 |
+| 23 | [CVE-2023-28432](https://github.com/Chocapikk/CVE-2023-28432) | 302 | 287 | 2026-04-03 | 9 | 104 |
+| 24 | [CVE-2023-4966](https://github.com/Chocapikk/CVE-2023-4966) | 297 | 260 | 2026-03-20 | 17 | 104 |
+| 25 | [CVE-2023-35885](https://github.com/Chocapikk/CVE-2023-35885) | 286 | 221 | 2026-05-09 | 33 | 95 |
 
 ---
 
@@ -93,16 +93,16 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Repository | 2026-03 | 2026-04 | 2026-05 | 2026-06 | 2026-07 | Total |
 |-----------|-------|-------|-------|-------|-------|-------|
-| [CVE-2026-21858](https://github.com/Chocapikk/CVE-2026-21858) | 1,629 | 2,145 | 1,474 | 767 | 515 | **6,530** |
-| [wpprobe](https://github.com/Chocapikk/wpprobe) | 1,137 | 1,525 | 1,428 | 1,147 | 776 | **6,013** |
-| [CVE-2025-55182](https://github.com/Chocapikk/CVE-2025-55182) | 749 | 810 | 1,475 | 675 | 435 | **4,144** |
-| [CVE-2024-45519](https://github.com/Chocapikk/CVE-2024-45519) | 452 | 828 | 702 | 462 | 369 | **2,813** |
-| [CVE-2024-36401](https://github.com/Chocapikk/CVE-2024-36401) | 245 | 468 | 506 | 344 | 260 | **1,823** |
-| [Windfall](https://github.com/Chocapikk/Windfall) | 0 | 1,291 | 173 | 149 | 95 | **1,708** |
-| [msf-exploit-collection](https://github.com/Chocapikk/msf-exploit-collection) | 250 | 482 | 382 | 320 | 240 | **1,674** |
-| [PersonalRobloxScripts](https://github.com/Chocapikk/PersonalRobloxScripts) | 341 | 606 | 357 | 250 | 116 | **1,670** |
-| [CVE-2026-24061](https://github.com/Chocapikk/CVE-2026-24061) | 267 | 418 | 286 | 228 | 245 | **1,444** |
-| [CVE-2023-28432](https://github.com/Chocapikk/CVE-2023-28432) | 328 | 462 | 332 | 212 | 96 | **1,430** |
+| [CVE-2026-21858](https://github.com/Chocapikk/CVE-2026-21858) | 1,629 | 2,145 | 1,474 | 767 | 540 | **6,555** |
+| [wpprobe](https://github.com/Chocapikk/wpprobe) | 1,137 | 1,525 | 1,428 | 1,147 | 803 | **6,040** |
+| [CVE-2025-55182](https://github.com/Chocapikk/CVE-2025-55182) | 749 | 810 | 1,475 | 675 | 451 | **4,160** |
+| [CVE-2024-45519](https://github.com/Chocapikk/CVE-2024-45519) | 452 | 828 | 702 | 462 | 377 | **2,821** |
+| [CVE-2024-36401](https://github.com/Chocapikk/CVE-2024-36401) | 245 | 468 | 506 | 344 | 266 | **1,829** |
+| [Windfall](https://github.com/Chocapikk/Windfall) | 0 | 1,291 | 173 | 149 | 98 | **1,711** |
+| [msf-exploit-collection](https://github.com/Chocapikk/msf-exploit-collection) | 250 | 482 | 382 | 320 | 252 | **1,686** |
+| [PersonalRobloxScripts](https://github.com/Chocapikk/PersonalRobloxScripts) | 341 | 606 | 357 | 250 | 129 | **1,683** |
+| [CVE-2026-24061](https://github.com/Chocapikk/CVE-2026-24061) | 267 | 418 | 286 | 228 | 251 | **1,450** |
+| [CVE-2023-28432](https://github.com/Chocapikk/CVE-2023-28432) | 328 | 462 | 332 | 212 | 100 | **1,434** |
 
 ---
 
@@ -111,121 +111,121 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | # | Referrer | Total Views | Total Uniques |
 |---|----------|-------------|---------------|
-| 1 | Google | 2,148 | 1,240 |
-| 2 | github.com | 707 | 473 |
-| 3 | search.brave.com | 119 | 74 |
+| 1 | Google | 2,093 | 1,208 |
+| 2 | github.com | 694 | 464 |
+| 3 | search.brave.com | 113 | 70 |
 | 4 | DuckDuckGo | 83 | 38 |
-| 5 | Bing | 73 | 42 |
-| 6 | chocapikk.com | 18 | 9 |
-| 7 | t.co | 12 | 9 |
-| 8 | packetstorm.news | 9 | 6 |
-| 9 | x7331.gitbook.io | 8 | 6 |
-| 10 | nvd.nist.gov | 7 | 4 |
-| 11 | cve.imfht.com | 6 | 3 |
-| 12 | yandex.ru | 6 | 4 |
-| 13 | medium.com | 6 | 5 |
-| 14 | chatgpt.com | 6 | 4 |
-| 15 | splunk.com | 5 | 3 |
+| 5 | Bing | 64 | 40 |
+| 6 | chocapikk.com | 15 | 8 |
+| 7 | t.co | 15 | 10 |
+| 8 | infinity.cyberwarfare.live | 10 | 3 |
+| 9 | x7331.gitbook.io | 9 | 7 |
+| 10 | packetstorm.news | 9 | 6 |
+| 11 | nvd.nist.gov | 7 | 4 |
+| 12 | cve.imfht.com | 6 | 3 |
+| 13 | yandex.ru | 6 | 4 |
+| 14 | medium.com | 6 | 5 |
+| 15 | chatgpt.com | 6 | 4 |
 
 ---
 
 ## Top Referrers by Repository
 
-<details><summary><b>CVE-2026-21858</b> (6,530 views)</summary>
+<details><summary><b>CVE-2026-21858</b> (6,555 views)</summary>
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| github.com | 163 | 103 |
-| Google | 82 | 53 |
+| github.com | 161 | 101 |
+| Google | 83 | 53 |
 | DuckDuckGo | 5 | 3 |
-| youtube.com | 4 | 1 |
 | Bing | 3 | 3 |
+| search.brave.com | 2 | 2 |
 
 </details>
 
-<details><summary><b>wpprobe</b> (6,013 views)</summary>
+<details><summary><b>wpprobe</b> (6,040 views)</summary>
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 253 | 171 |
-| github.com | 72 | 38 |
-| search.brave.com | 13 | 7 |
-| Bing | 10 | 5 |
+| Google | 244 | 162 |
+| github.com | 67 | 37 |
+| search.brave.com | 15 | 8 |
 | packetstorm.news | 9 | 6 |
+| Bing | 4 | 4 |
 
 </details>
 
-<details><summary><b>CVE-2025-55182</b> (4,144 views)</summary>
+<details><summary><b>CVE-2025-55182</b> (4,160 views)</summary>
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 196 | 110 |
-| github.com | 27 | 14 |
-| search.brave.com | 22 | 16 |
+| Google | 188 | 106 |
+| github.com | 29 | 14 |
+| search.brave.com | 19 | 14 |
 | ecosia.org | 5 | 2 |
 | medium.com | 3 | 2 |
 
 </details>
 
-<details><summary><b>CVE-2024-45519</b> (2,813 views)</summary>
+<details><summary><b>CVE-2024-45519</b> (2,821 views)</summary>
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 153 | 79 |
-| github.com | 26 | 19 |
+| Google | 148 | 75 |
+| github.com | 25 | 18 |
 | DuckDuckGo | 13 | 5 |
 | Bing | 5 | 3 |
 | darkwebinformer.com | 1 | 1 |
 
 </details>
 
-<details><summary><b>CVE-2024-36401</b> (1,823 views)</summary>
+<details><summary><b>CVE-2024-36401</b> (1,829 views)</summary>
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 93 | 54 |
+| Google | 90 | 54 |
 | github.com | 21 | 17 |
-| DuckDuckGo | 15 | 2 |
+| DuckDuckGo | 16 | 2 |
 | search.brave.com | 8 | 3 |
 | Bing | 3 | 3 |
 
 </details>
 
-<details><summary><b>Windfall</b> (1,708 views)</summary>
+<details><summary><b>Windfall</b> (1,711 views)</summary>
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 37 | 19 |
-| github.com | 8 | 8 |
+| Google | 36 | 18 |
+| github.com | 7 | 7 |
+| t.co | 4 | 3 |
 | l.facebook.com | 4 | 1 |
-| t.co | 3 | 3 |
 | teams.public.onecdn.static.microsoft | 3 | 2 |
 
 </details>
 
-<details><summary><b>msf-exploit-collection</b> (1,674 views)</summary>
+<details><summary><b>msf-exploit-collection</b> (1,686 views)</summary>
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 140 | 87 |
-| github.com | 16 | 4 |
+| Google | 136 | 84 |
+| github.com | 13 | 3 |
 
 </details>
 
-<details><summary><b>PersonalRobloxScripts</b> (1,670 views)</summary>
+<details><summary><b>PersonalRobloxScripts</b> (1,683 views)</summary>
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 82 | 41 |
-| search.brave.com | 7 | 6 |
+| Google | 89 | 45 |
+| search.brave.com | 6 | 5 |
 
 </details>
 
-<details><summary><b>CVE-2026-24061</b> (1,444 views)</summary>
+<details><summary><b>CVE-2026-24061</b> (1,450 views)</summary>
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 160 | 116 |
+| Google | 152 | 110 |
 | search.brave.com | 6 | 5 |
 | github.com | 5 | 4 |
 | sploitus.com | 2 | 1 |
@@ -233,11 +233,11 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 </details>
 
-<details><summary><b>CVE-2023-28432</b> (1,430 views)</summary>
+<details><summary><b>CVE-2023-28432</b> (1,434 views)</summary>
 
 | Referrer | Views | Uniques |
 |----------|-------|---------|
-| Google | 74 | 40 |
+| Google | 72 | 38 |
 | Bing | 1 | 1 |
 | DuckDuckGo | 1 | 1 |
 | github.com | 1 | 1 |
@@ -254,9 +254,9 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Path | Views | Uniques |
 |------|-------|---------|
-| `/` | 286 | 216 |
-| `/blob/master/exploit.py` | 38 | 31 |
-| `/blob/master/README.md` | 9 | 7 |
+| `/` | 276 | 212 |
+| `/blob/master/exploit.py` | 40 | 34 |
+| `/blob/master/README.md` | 10 | 8 |
 | `/tree/master` | 8 | 8 |
 | `/blob/master/docker-compose.yml` | 5 | 4 |
 
@@ -266,8 +266,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Path | Views | Uniques |
 |------|-------|---------|
-| `/` | 395 | 284 |
-| `/releases` | 17 | 14 |
+| `/` | 378 | 273 |
+| `/releases` | 18 | 15 |
 | `/releases/tag/v0.12.5` | 15 | 9 |
 | `/pulls` | 13 | 7 |
 | `/tree/main` | 8 | 6 |
@@ -278,8 +278,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Path | Views | Uniques |
 |------|-------|---------|
-| `/` | 233 | 174 |
-| `/blob/main/exploit.py` | 57 | 45 |
+| `/` | 226 | 171 |
+| `/blob/main/exploit.py` | 54 | 42 |
 | `/blob/main/requirements.txt` | 14 | 13 |
 | `/blob/main/pyproject.toml` | 10 | 7 |
 | `/tree/main/lab` | 9 | 7 |
@@ -290,11 +290,11 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Path | Views | Uniques |
 |------|-------|---------|
-| `/` | 184 | 120 |
+| `/` | 178 | 116 |
 | `/blob/main/exploit.py` | 51 | 39 |
 | `/tree/main` | 13 | 10 |
 | `/blob/main/requirements.txt` | 11 | 11 |
-| `/issues` | 6 | 5 |
+| `/blob/main/img/zimbra_rce.png` | 6 | 6 |
 
 </details>
 
@@ -302,8 +302,8 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 | Path | Views | Uniques |
 |------|-------|---------|
-| `/` | 130 | 91 |
-| `/blob/main/exploit.py` | 58 | 26 |
+| `/` | 127 | 91 |
+| `/blob/main/exploit.py` | 59 | 26 |
 | `/tree/main` | 7 | 4 |
 | `/blob/main/requirements.txt` | 6 | 4 |
 | `/issues` | 4 | 1 |
@@ -312,4 +312,4 @@ Auto-generated from [GitHub Traffic API](https://docs.github.com/en/rest/metrics
 
 ---
 
-*Last updated: auto-generated by `generate_readme.py` | 112 repos | 123 days of data*
+*Last updated: auto-generated by `generate_readme.py` | 112 repos | 124 days of data*
