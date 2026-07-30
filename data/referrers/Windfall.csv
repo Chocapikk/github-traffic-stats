@@ -112,3 +112,4 @@ date,ref_1,ref_1_count,ref_1_uniques,ref_2,ref_2_count,ref_2_uniques,ref_3,ref_3
 2026-07-27,Google,26,19,nvd.nist.gov,11,11,github.com,11,9,t.co,4,3,teams.public.onecdn.static.microsoft,4,3,l.facebook.com,4,1,waf-copilot.miggo.io,3,1,Bing,2,2,chatgpt.com,1,1,chocapikk.com,1,1
 2026-07-28,Google,28,21,nvd.nist.gov,12,12,github.com,11,9,t.co,4,3,teams.public.onecdn.static.microsoft,4,3,l.facebook.com,4,1,waf-copilot.miggo.io,3,1,Bing,2,2,DuckDuckGo,1,1,chatgpt.com,1,1
 2026-07-29,Google,23,17,nvd.nist.gov,12,12,github.com,10,8,t.co,3,3,waf-copilot.miggo.io,3,1,Bing,2,2,DuckDuckGo,1,1,chatgpt.com,1,1,cve.org,1,1,evernote.com,1,1
+2026-07-30,Google,26,18,nvd.nist.gov,11,11,github.com,9,7,t.co,3,3,waf-copilot.miggo.io,3,1,Bing,2,2,DuckDuckGo,1,1,chatgpt.com,1,1,cve.org,1,1,evernote.com,1,1
